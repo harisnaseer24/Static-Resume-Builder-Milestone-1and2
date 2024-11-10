@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+a{
+    color: rgb(46, 46, 46);
+    text-decoration: underline;
+    transition: all 1s ease-in 0.3s ;
+}
+a:hover{
+ cursor: pointer;
+    transform: scale(1.5);
+    padding: 5px;
+    text-decoration: underline  #007bff;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 5px 0;
+}
+
+h2 {
+    cursor: pointer;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    color: #007bff;
+}
+
+.section {
+    display: none; 
+    margin-bottom: 15px;
+}
+
+.job, .edu-item, .project1 {
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li {
+    background: #007bff;
+    color: white;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 4px;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="app.js" defer></script>
+   
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>HARIS NASEER</h1>
+            <p>SOFTWARE ENGINEER</p>
+            <p>Email: <a href="mailto:harisnaseer258@gmail.com">harisnaseer258@gmail.com</a> | Phone:  <a href="tel:+923241257793">(+92) 324 1257793</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/haris-naseer/" target="_blank">haris-naseer</a> | Github: <a href="https://github.com/harisnaseer24" target="_blank">harisnaseer24</a></p>
+        </header>
+
+        <section class="summary">
+            <h2 onclick="toggleSection('summary')">Professional Summary <i class="fa-solid fa-caret-down"></i></h2>
+            <div class="section" id="summary">
+                <p>Hi, I'm Haris, an enthusiastic and knowledgeable Computer Science graduate, having sound familiarity with cutting-edge technologies. I am always eager to expand my knowledge and stay up to date with the latest advancements. I am deeply passionate about learning and actively seeking opportunities to work and grow within a reputable organization.</p>
+            </div>
+        </section>
+
+        <section class="experience">
+            <h2 onclick="toggleSection('experience')">Work Experience <i class="fa-solid fa-caret-down"></i></h2>
+            <div class="section" id="experience">
+                <div class="job">
+                    <h3>Senior Faculty Member</h3>
+                    <p><strong>Aptech North Nazimabad</strong>, Karachi | JAN 2023 – Present</p>
+                    <ul>
+                        <li>Delivering comprehensive instruction in a 3-year ACCP Prime 2.0 Diploma program. Currently teaching fundamental technologies such as ASP .NET MVC Core, Angular Js, C#, WPF, SQL Server, HTML, CSS, Advance JS, XML/JSON, PHP/Laravel, MySql, Bootstrap, jQuery and more.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects">
+            <h2 onclick="toggleSection('projects')">Projects <i class="fa-solid fa-caret-down"></i></h2>
+            <div class="section" id="projects">
+                <div class="project1">
+                    <h3>Covid Vaccination System</h3>
+                    <p><strong>PHP & MySQL</strong></p>
+                    <ul>
+                        <li>A vaccination management system for covid-19. The solution comprises an admin panel, hospital panel, and patient panel. All the important details are stored in the database.</li>
+                    </ul>
+                </div>
+
+                <div class="project1">
+                    <h3>Online Floral Delivery System</h3>
+                    <p><strong>ASP .NET MVC CORE</strong></p>
+                    <ul>
+                        <li>An e-commerce website for selling bouquets online. The solution comprises an admin panel and user panel. All the important details are stored in the database. All functionalities are added such as search, filter, forget password, etc.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="education">
+            <h2 onclick="toggleSection('education')">Education <i class="fa-solid fa-caret-down"></i></h2>
+            <div class="section" id="education">
+                <div class="edu-item">
+                    <h3>Bachelor of Computer Science - 2nd Position</h3>
+                    <p><strong>Dawood University of Engineering and Technology (DUET), Karachi.</strong> | 2019-2023</p>
+                </div>
+                <div class="edu-item">
+                    <h3>Intermediate</h3>
+                    <p><strong>Govt Degree Boys College, Stadium Road S.R.E Majeed, Karachi.</strong> | 2016-2018</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills">
+            <h2 onclick="toggleSection('skills')">Skills  <i class="fa-solid fa-caret-down"></i></h2>
+            <div class="section" id="skills">
+                <ul>
+                    <li>ASP .Net MVC CORE, WPF, Web APIs.</li>
+                    <li>MySQL/SQL Server</li>
+                    <li>HTML, CSS, JS, TypeScript, Next.js & Angular JS.</li>
+                    <li>PHP/ Laravel.</li>
+                    <li>C++, C#, and Java.</li>
+                    <li>MERN Stack Beginner level</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="languages">
+            <h2 onclick="toggleSection('languages')">Languages <i class="fa-solid fa-caret-down"></i></h2>
+            <div class="section" id="languages">
+                <ul>
+                    <li>English.</li>
+                    <li>Urdu.</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+   
+</body>
+</html>
