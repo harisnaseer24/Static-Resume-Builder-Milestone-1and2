@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+    <script src="./app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Builder</h1>
+        <form id="resumeForm">
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="text" id="github" placeholder="Github Username (Optional)" required>
+            <input type="text" id="linkedin" placeholder="Linkedin Username (Optional)" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+            <textarea id="summary" placeholder="Professional Summary" required></textarea>
+            <h2>Work Experience</h2>
+            <textarea id="experience" placeholder="Work Experience" required></textarea>
+            <h2>Projects</h2>
+            <textarea id="projects" placeholder="Projects" required></textarea>
+            <h2>Education</h2>
+            <textarea id="education" placeholder="Education" required></textarea>
+            <h2>Skills</h2>
+            <textarea id="skills" placeholder="Skills (comma-separated)" required></textarea>
+            <h2>Languages</h2>
+            <textarea id="languages" placeholder="Languages (comma-separated)" required></textarea>
+            <button type="submit" onclick="GenerateResume()">Generate Resume</button>
+        </form>
+
+        <div class="resume" id="resumeOutput">
+            <h1 id="resumeName"></h1>
+            <p>Email: <span id="resumeEmail"></span></p>
+            <p>Phone: <span id="resumePhone"></span></p>
+            <p>Github: <span id="Github"></span></p>
+            <p>LinkedIn: <span id="LinkedIn"></span></p>
+            <h2>Professional Summary</h2>
+            <p id="resumeSummary"></p>
+            <h2>Work Experience</h2>
+            <p id="resumeExperience"></p>
+            <h2>Projects</h2>
+            <p id="resumeProjects"></p>
+            <h2>Education</h2>
+            <p id="resumeEducation"></p>
+            <h2>Skills</h2>
+            <p id="resumeSkills"></p>
+            <h2>Languages</h2>
+            <p id="resumeLanguages"></p>
+        </div>
+        <button type="button" class="downloadbtn" id="downloadPDF" onclick="DownloadPDF()">Download PDF</button>
+       
+        
+    </div>
+
+</body>
+</html>
